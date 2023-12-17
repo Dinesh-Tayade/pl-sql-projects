@@ -10,8 +10,9 @@ CREATE TABLE aadhar_card_details ( aadhar_number int,
                                    citizenship varchar2(50));
                                    
 INSERT INTO aadhar_card_details VALUES(999493993937,'Dinesh','Madan','Tayde','15-09-1999',9848848488,'xyz123@gmail.com','karanjade,secotor-6,navi-mumbai','Indian');
+
 select *from aadhar_card_details;
-DROP TABLE aadhar_card_details;
+
 /
 -- created package specs containing different procedures..
 CREATE OR REPLACE PACKAGE aadhar_pkg IS
@@ -104,7 +105,7 @@ CREATE OR REPLACE PACKAGE BODY aadhar_pkg IS
    
 END aadhar_pkg;
 /
-/
+
 -- called procedure captcha_code_generation which return captcha code..
 DECLARE
 captcha_code varchar2(10);
