@@ -16,7 +16,7 @@ insert into google_pay_customer_payment_details values (105,'Rakesh',111115,'Boo
 
 select * from google_pay_customer_payment_details; 
 
-drop table google_pay_customer_payment_details;
+
 /
 -- This table has customers coupon and reward details.. 
 create table users_reward 
@@ -35,7 +35,7 @@ insert into users_reward values (103,'KUKUFM200',sysdate,sysdate+3/(24*60),'flat
 insert into users_reward values (104,'FLIPKARTC50',sysdate,sysdate+5/(24*60),'50 rs. cashback at Flipkart','inactive'); 
 insert into users_reward values (105,'MAMAREARTH60',sysdate,sysdate+4/(24*60),'60% off on Mamaearth products','active'); 
 
-drop table users_reward;
+
 select * from users_reward;
 /
 -- This procedure created to validate coupon code..
